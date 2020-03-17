@@ -1,0 +1,15 @@
+<!--components/playbar/Playbar.wxml-->
+<view id="playbar-b" class="playbar-c">
+    <image src="{{picUrl}}" mode="widthFix"></image>
+    <view class="music-message">
+        <text class="music-name">{{musicName}}</text>
+        <text class="music-singer">{{singer}}</text>
+    </view>
+    <view class="play-btn">
+        <text class="{{isplay?'iconfont icon icon-bofang':'iconfont icon icon-zanting'}}" bindtap="playaudo"></text>
+        
+    </view>
+    <view class="play-list">
+           <text class="iconfont icon icon-PlayListbofangliebiao"></text>
+    </view>
+</view>

@@ -1,0 +1,23 @@
+<!--components/nav/Nav.wxml-->
+<view class="btn-nav">
+  <navigator>
+    <view><text class="{{iIconSytleNum}}"></text></view>
+    <text>每日推荐</text>
+  </navigator>
+  <navigator>
+    <view><text class="iconfont  icon-gedan"></text></view>
+    <text>歌单</text>
+  </navigator>
+  <navigator>
+    <view><text class="iconfont icon-diantai"></text></view>
+    <text>排行榜</text>
+  </navigator>
+  <navigator>
+    <view><text class="iconfont icon-PCbofangye_paihangbang"></text></view>
+    <text>电台</text>
+  </navigator>
+  <navigator>
+    <view><text class="iconfont icon-live_icon"></text></view>
+    <text>直播</text>
+  </navigator>
+</view>

@@ -1,0 +1,29 @@
+/**index.wxss**/
+.container{
+    padding: 0 30rpx;
+}
+.logo-content{
+    height: 100%;
+    position: relative;
+    z-index: 999999999999999999999;
+}
+.logo-wyy{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background:rgba(220, 44, 31);
+    z-index: 9999999;
+}
+.logo-wyy .title-wyy{
+   padding-top: 200rpx;
+}
+.logo-wyy image{
+    width: 100%;
+}
+.logo-wyy .wyy-footer{
+     width: 100%;
+     position: absolute;
+     bottom: 20rpx;
+}

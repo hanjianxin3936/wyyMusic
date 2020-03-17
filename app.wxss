@@ -1,0 +1,21 @@
+/**app.wxss**/
+@import "./static/ali-icon/iconfont.wxss";
+@import "./components/hd/Hd.wxss";
+w-playbar{
+  width:750rpx;
+  position:fixed;
+  bottom: 0rpx;
+  left: 0;
+  z-index: 999999999999;
+}
+.container{
+  font-size: 24rpx;
+}
+page{
+  height: 100%;
+
+  box-sizing: border-box;
+}
+view{
+  font-family: Arial, Helvetica, sans-serif;
+}

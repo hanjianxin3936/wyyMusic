@@ -1,0 +1,34 @@
+/* components/banner/Banner.wxss */
+.banner-content{
+  width: 100%;
+  height:272rpx; 
+}
+.banner-content-swiper{
+  height:258rpx;    
+}
+.swiper-item{
+  width: 700rpx;
+
+ }
+swiper-item{
+  border-radius: 20rpx;
+    overflow: hidden;
+}
+.swiper-item .typeTitle{
+  position: absolute;
+  display: block;
+  width: 80rpx;
+  height: 40rpx;
+  bottom: 0rpx;
+  right: -5rpx;
+  z-index: 9999;
+  line-height: 40rpx;
+  text-align: center;
+  color: #fff;
+  border-top-left-radius: 10rpx;
+}
+.swiper-item image{
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+}

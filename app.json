@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/song/song",
+    
+    "pages/songList/songList",
+    "pages/playlist/playlist",
+    "pages/logo/logo",
+    "pages/songLabel/songLabel",
+    "components/cvrlst/Cvrlst"
+  
+  ],
+  "requiredBackgroundModes": [
+    "audio",
+    "location"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "网易云音乐",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "w-hd": "components/hd/Hd",
+    "w-nav": "components/nav/Nav",
+    "w-cvrlst": "components/cvrlst/Cvrlst",
+    "w-banner": "components/banner/Banner",
+    "w-albumNewest": "components/albumNewest/AlbumNewest",
+    "my-image": "components/my-image/My-image",
+    "w-playbar": "components/playbar/Playbar",
+    "playlist-nav": "components/playList-nav/PlayList-nav",
+    "music-item": "components/music-item/Music-item",
+    "my-loading": "components/loading/Loading"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "navigationStyle": "custom"
+}

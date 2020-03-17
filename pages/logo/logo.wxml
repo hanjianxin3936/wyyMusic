@@ -1,0 +1,7 @@
+<!--pages/logo/logo.wxml-->
+<view class="logo-wyy">
+ <view class="title-wyy"></view>
+ <view class="wyy-footer">
+  <image src="../../assets/image/topbar.png"></image>
+ </view>
+</view>

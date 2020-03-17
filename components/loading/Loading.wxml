@@ -1,0 +1,10 @@
+<!--components/loading/Loading.wxml-->
+<view class="Loading-content" wx:if="{{isLoading}}">
+   <view class="loading" >
+        <text class="box1"></text>
+        <text class="box2"></text>
+        <text class="box3"></text>
+        <text class="box4"></text>
+        <text class="box5"></text>
+   </view>
+</view>

@@ -1,0 +1,8 @@
+<!--components/cvrlst/Cvrlst.wxml-->
+<view class="crvlst-content">
+  <view class="page-section-spacing">
+    <scroll-view class="scroll-view_x" scroll-anchoring scroll-x="true">
+        <music-item class="crvlst-music-item" personalizedList="{{personalizedList}}"></music-item>
+    </scroll-view>
+  </view>
+</view>

@@ -1,0 +1,32 @@
+<!--components/albumNewest/AlbumNewest.wxml-->
+<view class="albumNewest-content">
+
+	<swiper
+	 indicator-dots="{{swiperJson.indicatorDots}}"
+	 interval="{{swiperJson.interval}}"
+	 indicator-active-color="{{swiperJson.indicatorActiveClor}}"
+	 indicator-color="{{swiperJson.indicatorColor}}"
+     circular="{{swiperJson.circular}}"
+     next-margin="60rpx"
+     >
+		<block wx:for="{{toplist}}">
+        <swiper-item class="swiper-item">
+          <view  class="item">
+              <view class="item-title">云音乐热歌榜 ></view>
+              <view>
+                 <view class="box"  wx:for="{{item}}" wx:for-item="tracksItem" wx:for-index="tracksindex" wx:key="tracksindex">
+                    <view class="img">
+                        <my-image src="{{tracksItem.al.picUrl}}" mode="widthFix"></my-image>
+                        
+                    </view>
+                    <view class="num">{{tracksindex+1}}</view>
+                    <view class="title">{{tracksItem.al.name}}</view>
+                    <view class="second">-{{tracksItem.ar[0].name}}</view>
+                 </view> 
+              </view>
+          </view>
+        </swiper-item>
+		</block>
+	</swiper>
+
+</view>

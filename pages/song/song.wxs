@@ -1,0 +1,6 @@
+function volumeBindchange(event,ins){
+   console.log(event)
+}
+module.exports = {
+    volumeBindchange:volumeBindchange
+}

@@ -1,0 +1,51 @@
+/* components/loading/Loading.wxss */
+.Loading-content{
+    width: 100%;
+    height:148rpx;
+    display: flex;
+    justify-content:center;
+   
+}
+.loading{
+    display: flex;
+    align-items: center;
+}
+.loading text{
+    display: inline-block;
+    width: 0;
+    border-left: 6rpx solid rgb(85, 78, 78);
+    padding: 0 8rpx;
+}
+
+.loading .box1{
+    height: 40rpx;
+    animation:box1 1s linear 0s infinite alternate;
+}
+.loading .box2{
+    height: 60rpx;
+    animation:box2 1s linear 0s infinite alternate;
+}
+.loading .box3{
+    height:80rpx;
+    animation:box3 1s linear 0s infinite alternate;
+}
+.loading .box4{
+    height: 60rpx;
+    animation:box2 1s linear 0s infinite alternate;
+}
+.loading .box5{
+    height: 40rpx;
+    animation:box1 1s linear 0s infinite alternate;
+}
+@keyframes box1{
+    from {height:40rpx;}
+    to {height:60rpx;}
+}
+@keyframes box2{
+    from {height:60rpx;}
+    to {height:40rpx;}
+}
+@keyframes box3{
+    from {height:80rpx;}
+    to {height:20rpx;}
+}

@@ -1,0 +1,11 @@
+<!--pages/songLabel/songLabel.wxml-->
+<view class="songLabel-content">
+     <view class="songLabel-item" wx:for="{{playcategoriesList}}" wx:for-item="playitem" wx:for-index = "playindex" wx:key="playindex">
+       <view class="songLabel-title"><text>{{playitem.title}}</text></view>
+       <view class="songLabel-box" >
+           <view class="songLabel-box-item" wx:for ="{{playitem.list}}">
+               <view class="text"><text class="{{item.hot? 'iconfont icon-show_renqiredu':''}}"></text>{{item.name}}</view>
+           </view>
+        </view>
+     </view>    
+</view>

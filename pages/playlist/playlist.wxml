@@ -1,0 +1,27 @@
+<!-- pages/playlist/playlist.wxml -->
+<!-- <playlist-nav 
+playNavCatList="{{playNavCatList}}" 
+playNavView="{{playNavView}}"
+playNavSub="{{playNavSub}}"
+playcategories="{{playcategories}}"
+url="../../pages/songLabel/songLabel"
+></playlist-nav> -->
+<view class="playlist-content">
+<view class="playlist-nav">
+    <scroll-view class="scroll-view_x" bindchange="chooseNav" scroll-with-animation scroll-anchoring scroll-into-view="{{toView}}" bindscroll="bindscroll" scroll-x="true">
+        <view class="scroll-view-item_H demo-text-1" wx:for="{{playNavView}}" wx:key ="index" id="{{'item'+index}}" data-name="{{item.name}}" bindtap="swichNav">
+            <text>{{item.name}}</text>
+        </view>
+    </scroll-view>
+    <text class="playlist-nav-caidan iconfont icon-caidan" bindtap="hrefClickpaybar"></text>
+</view>
+<swiper class="playlist-swiper" style="{{'height:'+swiperHeight+'rpx'}}" bindchange="swiperbindchange" indicator-dots="{{swiperJson.indicatorDots}}" interval="{{swiperJson.interval}}" autoplay="{{autoplay}}" indicator-active-color="{{swiperJson.indicatorActiveClor}}" indicator-color="{{swiperJson.indicatorColor}}" circular="{{swiperJson.circular}}" duration="{{swiperJson.duration}}" current="{{swiperJson.current}}">
+    <block wx:for="{{playNavView}}" wx:key="index">     
+        <swiper-item item-id="{{item.name}}" style="height:auto" class="swiper-playlist-item">
+             <my-loading isLoading="{{item.isLoading}}"></my-loading>
+             <music-item class="playlist-music-item" personalizedList="{{item.playlists}}"></music-item>
+        </swiper-item>
+    </block>
+</swiper>
+<w-playbar></w-playbar>
+</view>

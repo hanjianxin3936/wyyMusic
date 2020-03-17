@@ -1,0 +1,94 @@
+/* pages/playlist/playlist.wxss */
+.playlist-content{
+  padding: 0 30rpx;
+}
+.playlist-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 1rpx solid #dadada;
+    padding: 0 20rpx;
+    background: #fff;
+    z-index: 9999;
+}
+.page-section-spacing{
+    height: 300rpx;
+    overflow: hidden;
+  }
+  .scroll-view_x{
+    width: 720rpx;
+    white-space: nowrap;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+  }
+  .scroll-view_x .scroll-view-item_H{
+    display: inline-block;
+    padding:0 30rpx;
+    height: 64rpx;
+    position: relative;
+    vertical-align:top;
+    white-space:normal ;
+    line-height: 64rpx;
+  }
+  .scroll-view_x .scroll-view-item_H text{
+      display: inline-block;
+      height: 61rpx;
+      font-size: 26rpx;
+    
+  }
+  .scroll-view_x .scroll-view-item_H.active text{
+    color: red;
+     border-bottom: 5rpx solid red;
+ 
+}
+ 
+@font-face {font-family: "iconfont";
+    src: url('iconfont.eot?t=1583156484700'); /* IE9 */
+    src: url('iconfont.eot?t=1583156484700#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAANAAAsAAAAAB3gAAALxAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCcAqDBIJYATYCJAMICwYABCAFhG0HMBt+BhHVk7lkXybwcNhyVaoVg2rTirFRp4bfVkuk6orwlhgLX6T2mOD5Wivfn+6d6yMCj8AS0AGqkyGwUVHA5dGGhd6tTVP7CNsRoViS8+C77QN5xg7p0rLCjT1wzmW/w5tST5EGb8q0X0sLtEr0en4DBAz8bzCMr8FlMBQAf9yrmrHpA2Y9oIDlojbnolw4FA5QgPbsWFSqaAvSgnGHsZsoD+I+BHAjSgYpC+vaMGjAMgFkrpgcxqS06JpCwSDYJXs1IKeAA2M1oBfACf95+YsfAWDhUAAoaZooH6PoZzBllf82fRQF8MYzA9ohUEAG0CBtpdYGVBjNoHBzopo4rKtQ4Gc/5a72Hw8ExAZAvgcAESL3nHiYf6p/aQGgAQMcANz0KgPjI4hyAXx9nto+p27/lvvhs2j+3o/Hbqo5lUl15m5NJsx3PGympJeV1MyqlZ7bmBbp9GUzKDutBudms8CWIlPf51U/ACZYPFrHKbwgaNozl32zYx03kr7ZvoyV/rq99/iMUf/HPP+hsh293ovqFUGOG2vIVuw4vIn7o36mUtyIyIRiOlQ2iJATcUqBGg05ZWcwMhj7M+Xf6Yivum9kidPJP9WiPy2mCADnVd1U+Z/5HWbuqI7jAz9jIQDAl2ch3O28amhnB3P+NoH/wGvZpV0B0Fna5pUmLQ7A3F+DG26AE2Snnx99lYE3nRQMgbdudyEyBoUhAa3xGeDAnQKwMRSCG+kqD7vjbwWFaBKANAcCCD6egYUXL0Hh4xNa47+DgyD/wcYnGNzoENmZ7iRFFSqTFkoxvmCRdK1BBlFB4ZKyQ605KeDULfFYBNCz3WwiopZ4jA3jMfNFDBruGgyFh1Fdd9hzV1Iidi7SB45jyj7JTroGFJm0UIrxBYukaw0dLCr3/UvKDrXmmo4O65Z4LEZHz3ZboCNp26rjWj4yHjNfxKDhrsFQMFMNox325bNKSsTOe4T7wJF6mbZSe35583SHADeAyhI4bYzqItUtAAAAAA==') format('woff2'),
+    url('iconfont.woff?t=1583156484700') format('woff'),
+    url('iconfont.ttf?t=1583156484700') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url('iconfont.svg?t=1583156484700#iconfont') format('svg'); /* iOS 4.1- */
+  }
+  
+  .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-caidan:before {
+    content: "\e718";
+  }
+  .playlist-nav-caidan{
+     position: absolute;
+     width:80rpx;
+     height: 64rpx;
+     right: 10rpx;
+     top: 0rpx; 
+     background: #fff;
+     line-height: 64rpx;
+     font-size: 36rpx;
+     text-align: center;
+  }
+  .playlist-music-item{
+     display: flex;
+     align-content: space-between;
+     flex-wrap:wrap;
+     justify-content: space-between;
+  }
+  .playlist-swiper{
+    padding-top: 94rpx;
+  }
+  .swiper-playlist{
+     position: relative;
+     top:64rpx;
+     
+  }
+  .swiper-playlist-item{
+     height: auto !important;
+
+  }

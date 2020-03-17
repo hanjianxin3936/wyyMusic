@@ -1,0 +1,34 @@
+<!-- index.wxml -->
+<view class="container">
+  <view class="logo-content" style="{{'display:'+constData.islogo}}">
+    <view class="logo-wyy">
+      <view class="title-wyy">
+        <image mode="aspectFill" mode="widthFix" src="../../assets/image/logo_title.png"></image>
+      </view>
+      <view class="wyy-footer">
+        <image mode="aspectFill" mode="widthFix" src="../../assets/image/logo_footer.png"></image>
+      </view>
+    </view>
+  </view>
+  <w-banner bannerList="{{variable.bannerList}}"></w-banner>
+  <w-nav></w-nav>
+  <w-hd url="../../pages/playlist/playlist">
+    <text slot="minTitle">推荐歌单</text>
+    <text slot="maxTitle">热门推荐 好音乐都在这里</text>
+    <text slot="href">查看更多</text>
+  </w-hd>
+  <w-cvrlst personalizedList="{{variable.personalizedList}}"></w-cvrlst>
+  <w-hd>
+    <text slot="minTitle">排行榜</text>
+    <text slot="maxTitle">热歌风向标</text>
+    <text slot="href">查看更多</text>
+  </w-hd>
+  <w-albumNewest toplist="{{variable.toplist}}"></w-albumNewest>
+  <w-hd>
+    <text slot="minTitle">场景推荐</text>
+    <text slot="maxTitle">新碟上架 旧音乐听腻了？</text>
+    <text slot="href"><text class="iconfont icon-bofang"></text>查看更多</text>
+  </w-hd>
+  <w-cvrlst personalizedList="{{variable.albumnewest}}"></w-cvrlst>
+  <w-playbar></w-playbar>
+</view>

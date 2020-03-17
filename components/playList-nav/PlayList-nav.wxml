@@ -1,0 +1,10 @@
+<!-- components/playList-nav/PlayList-nav.wxml -->
+<view class="playlist-nav">
+    <scroll-view class="scroll-view_x" bindchange="chooseNav" scroll-with-animation scroll-anchoring  scroll-into-view="{{toView}}" bindscroll="bindscroll"  scroll-x="true">
+        <view class="scroll-view-item_H demo-text-1" wx:for="{{playNavView}}"  id="{{'item'+index}}"   bindtap="swichNav">
+            <text>{{item.name}}</text>
+        </view>
+        
+    </scroll-view>
+    <text class="playlist-nav-caidan iconfont icon-caidan" bindtap="hrefClickpaybar"></text>
+</view>

@@ -1,0 +1,33 @@
+<!-- pages/song/song.wxml -->
+<wxs module="wxs" src = "./song.wxs"></wxs>
+<view class="song-content">
+    <view class="song-volume">
+        <view class="volume-contral"> 
+            <!-- 点击进度条任意位置    进度条进度更新（不需要动画）   圆点位置更新 -->
+            <!-- 手机音量按键 + -      进度条进度更新（不需要动画     圆点为位置更新  -->
+            <!-- 滑动圆点             进度条位置更新（不需要动画    音量大小更新 -->
+            <movable-area class="movable-area">
+                <movable-view class="movable-view-wrap"  bindchange="{{wxs.volumeBindchange}}" x="{{volumeBtnX}}" direction="horizontal">
+                  <view  class="movable-view"></view>
+                </movable-view>
+            </movable-area>
+            <view touchstartbind="tapprogress" class="volume-progress">
+                <progress  class="song-progress-volume" percent="{{volumePercent}}" active="{{false}}" activeColor="rgba(188,170,163)" backgroundColor="rgba(110,78,76)" />
+            </view>
+        </view>
+    </view>
+    <view class="singer">
+        <view>假装</view>
+        <view>陈雪凝</view>
+    </view>
+    <view class="lyric">
+        aaaaaaaaa
+        <text>123123123</text>
+        <text>21312312</text>
+        <text>213213123</text>
+        <text>123</text>
+        <text>12312321</text>
+    </view>
+    <view class="audio-progress "></view>
+    <view class="audio-control"></view>
+</view>

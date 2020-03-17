@@ -1,0 +1,15 @@
+/* components/cvrlst/Cvrlst.wxss */
+.page-section-spacing{
+  height: 300rpx;
+  overflow: hidden;
+}
+.scroll-view_x{
+  white-space: nowrap;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.crvlst-music-item>view{
+  margin-right: 20rpx;
+}
+

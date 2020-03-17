@@ -1,0 +1,15 @@
+<!--components/my-image/My-image.wxml-->
+<image
+  lazy-load
+  src="{{loadingSrc}}"
+  mode="{{imgMode}}"
+  class="{{isLoading?'':'loading'}}"
+></image>
+<image
+   lazy-load
+   src="{{src}}"
+   mode="{{imgMode}}"
+   class="{{!isLoading?'':'loading'}}"
+   binderror="error"
+   bindload="load"
+></image>

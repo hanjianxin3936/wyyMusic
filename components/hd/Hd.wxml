@@ -1,0 +1,18 @@
+<!--components/hd/Hd.wxml-->
+<view class="w-hd">
+  <view class="w-hd-title">
+      <text class="hd-t">
+         <slot name="minTitle"></slot>
+      </text>
+  </view>
+  <view class="w-hd-content">
+    <view class="w-hd-left">
+      <text class="hd-b">
+         <slot name="maxTitle"></slot>
+      </text>
+    </view>
+    <view class="w-hd-right"  bindtap="hrefPlaylistEvent">
+      <text><slot name="href"></slot></text>
+    </view>
+  </view>
+</view>

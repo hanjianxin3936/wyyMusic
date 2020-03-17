@@ -1,0 +1,7 @@
+<!--components/music-item/Music-item.wxml-->
+      <view class="scroll-view-item_H music-item demo-text-1" wx:for="{{personalizedList}}" wx:key="index" data-audoId="{{item.id}}" bindtap= "hrefSongList">
+            <view class="heat" wx:if="{{item.playCount}}"><text class="iconfont icon-bofangsanjiaoxing"></text>{{item.playCount}}</view>
+            <my-image src="{{item.picUrl}}" mode="widthfix"></my-image>
+            <!-- <image src="{{item.picUrl}}" mode="widthfix"></image> -->
+            <text class="heat-text">{{item.name}}</text>
+      </view>

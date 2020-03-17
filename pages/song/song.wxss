@@ -1,0 +1,51 @@
+/* pages/song/song.wxss */
+.song-content{
+    padding: 30rpx 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(80, 52, 42),rgb(13, 56, 54), rgba(6, 10, 13));
+
+}
+/* 拖拽容器 */
+.movable-area{
+    width: 550rpx;
+    height:4rpx;
+    position: absolute;
+    z-index: 100;
+}
+/* 进度条 */
+.volume-progress{
+    width: 550rpx;
+    height:4rpx;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 99;
+}
+.song-volume{
+    position: relative;
+}
+.volume-contral{
+    position: relative;
+    width: 550rpx;
+    margin: 0 auto;
+}
+.movable-view-wrap{
+    display: flex;
+    width: 28rpx;
+    height: 28rpx;
+    margin-top: -14rpx;
+    align-items: center;
+}
+.movable-view{
+    
+    width: 14rpx;
+    height: 14rpx;
+    background-color: #fff;
+    border-radius: 14rpx;
+
+}
+.volume-btn{
+    position: absolute;
+    
+    
+}

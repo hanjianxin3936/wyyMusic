@@ -1,0 +1,4 @@
+/* components/my-image/My-image.wxss */
+.loading{
+    display: none;
+}

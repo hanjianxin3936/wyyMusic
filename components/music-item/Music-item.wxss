@@ -1,0 +1,33 @@
+/* components/music-item/Music-item.wxss */
+.scroll-view-item_H.music-item{
+    display: inline-block;
+    width: 200rpx;
+    height: 310rpx;
+    /* margin-right: 25rpx; */
+    position: relative;
+    vertical-align:top;
+    white-space:normal ;
+  }
+ .scroll-view-item_H.music-item image{
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 15rpx;
+  }
+  .scroll-view-item_H.music-item .heat{
+    position: absolute;
+    top: 5rpx;
+    right: 10rpx;
+    font-size: 20rpx;
+    color: #fff;
+  }
+  .icon-bofangsanjiaoxing{
+    font-size: 20rpx;
+  }
+  .scroll-view-item_H.music-item  .heat-text{
+    display: block;
+    font-size: 28rpx;
+    line-height: 32rpx;
+    height: 64rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }

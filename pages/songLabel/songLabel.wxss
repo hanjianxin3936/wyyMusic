@@ -1,0 +1,54 @@
+/* pages/songLabel/songLabel.wxss */
+.songLabel-item{
+    height: auto;
+    font-size: 30rpx;
+    padding-top: 20rpx;
+}
+.songLabel-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    padding: 30rpx 0rpx;
+}
+.songLabel-box .songLabel-box-item{
+    flex: 0 0 25%;  
+    text-align: center;
+    max-height: 70rpx;
+    line-height: 70rpx;
+    margin-bottom: 20rpx;
+    box-sizing: border-box;
+    padding-right:20rpx;
+    
+}
+.songLabel-box-item .text{
+    white-space: nowrap;
+    word-wrap: normal;
+    border-radius: 40rpx;
+    background-color: rgba(228, 228, 228, .5);
+}
+@font-face {font-family: "iconfont";
+    src: url('iconfont.eot?t=1583206138136'); /* IE9 */
+    src: url('iconfont.eot?t=1583206138136#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAALQAAsAAAAABnQAAAKFAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCcAp4gRIBNgIkAwgLBgAEIAWEbQc4G8AFyA4lTY/AgOEJQkA8fL/2O3f3fTHEkmqDJt7MEkMk0Ri6eILYKJ0hQqKEnXftN1SS+CCb68nu/n3bsb9vCdWkljQ0EhGaeuSRcJ/ncnwL6EBaHyiXNYctWxhQLw6kgPbGNlmp5A1jF7iE8wTqBoWw2M4rqQH2EmtaIK4lkQH2uagksUJVKNesTeJTSTV7z44BH+H3419U2JMp5ayKw6tcHmT83dsT8rvizkX+7G4+N9gmcswDEnFam91nJRhrpZ61NgrsqzT4uy8K3y72ahHsr7OKm6AfSu9J5spvtZDBbXU1Clga9QBilDk/X9gJPPO/uBg8uzp9uT7fO005P+85Oz1dOQ879X/D6dltV5ToPv2cWpRrf5mYG7Q9NsK2lBbPG78visvYRGsps/jpd+3I3VT2X8W5tO8sO9Q0zHjWeNC1Q7AOoLhLflYDAsGP51twu9vyZ7WRwHffx18o7+enunNf8JOqEorf1M8Vli1LqhZqzYyeXATFPKBgBbvcjzX23pE7VHOKEf6KAQ25qnEiMfMoaVhEWdUa6ubkb27oRliJVMOsAYDQ4QCZNl/IdTghEnOHkj7vKOsIK9SdR/eeDZMhOW4RxFDEQ9YMJQ5rBcdBHaPSKiTq1QzJKkJOHSI6KQEjwyKKhXykRWSOBTqDGEWpAAWCNTAPXIbUagxlgpWIo2EKSuWk8HCh7k1hHNYAR1sIhEEhPIhlBkk4mJbgt6ccS5+vgoj01BikpaEmXAchdKTeoUhhInoQ+Vptr4Z7uUbHQBSFogSQgMA0oDwwClFTwyC5fpQSwqHCKEakZUnC7WZCX23Y+nrN1+2AOsuUhd0/13ajwMZ2grSdkhfh9QAA') format('woff2'),
+    url('iconfont.woff?t=1583206138136') format('woff'),
+    url('iconfont.ttf?t=1583206138136') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url('iconfont.svg?t=1583206138136#iconfont') format('svg'); /* iOS 4.1- */
+  }
+  
+  .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-show_renqiredu:before {
+    content: "\e5de";
+  }
+  .text .icon-show_renqiredu{
+    color: red;
+    font-size: 30rpx;
+    padding-right: 20rpx;
+  }

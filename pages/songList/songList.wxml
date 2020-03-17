@@ -1,0 +1,57 @@
+<!--pages/songList/songList.wxml-->
+<view class="song-playmessage">
+    <view class="song-playmessage-t">
+        <view class="cover-left">
+            <image src="{{converData.imagePic}}" mode="widthFix" />
+            <text class="playCount iconfont icon-bofangsanjiaoxing">{{converData.playCount}}</text>
+          
+        </view>
+         <view class="cover-right">
+            <view class="title">{{ converData.name}}</view>
+            <view class="creator iconfont icon-jiantou">
+                        {{converData.nickname}}
+            </view>
+            <view class="description">
+                <view >{{converData.description}}</view>
+                <text class="iconfont icon-jiantou"></text>
+            </view>
+        </view>
+    </view>
+    <view class="song-playmessage-b"></view>
+</view>
+<view class="vip-audio">
+    <view class="song-item">
+        <view class="song-prder iconfont icon-yinle"></view>    
+        <view class="song-audio-message">
+            <view class="song-audio-title">
+                <text>含6首VIP专享歌曲</text>
+                <text class="song-top-num"></text>
+            </view> 
+        </view>
+     </view>
+</view>
+<view class="song-wrap">
+    <view class="song-cntent">
+        <view class="song-top song-item">
+            <view class="song-item">
+                <view class="song-prder iconfont icon-bofang"></view>
+                <view class="song-audio-message">
+                    <view class="song-audio-title">
+                        <text>播放全部</text>
+                        <text class="song-top-num">共({{playlisttracks.length}}首)</text>
+                    </view> 
+                </view>
+            </view>
+        </view>
+        <view class="song" wx:for="{{playlisttracks}}">
+            <view class="song-item"  data-data="{{item}}"  bindtap="hrefSongUrl">
+                <view class="song-prder">{{index+1}}</view>
+                <view class="song-audio-message">
+                    <view class="song-audio-title">{{item.name}}</view> 
+                    <view class="song-audio-audo">{{item.ar[0].name}}-{{item.al.name}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<w-playbar></w-playbar>

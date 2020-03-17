@@ -1,0 +1,22 @@
+<!--components/banner/Banner.wxml-->
+<view class="banner-content">
+	<swiper
+	class="banner-content-swiper"
+	 indicator-dots="{{swiperJson.indicatorDots}}"
+	 interval="{{swiperJson.interval}}"
+      autoplay="{{autoplay}}"
+	 indicator-active-color="{{swiperJson.indicatorActiveClor}}"
+	 indicator-color="{{swiperJson.indicatorColor}}"
+	 circular="{{swiperJson.circular}}"
+	>
+		<block wx:for="{{bannerList}}">
+			<swiper-item>
+				<view class="swiper-item">
+					<text class="typeTitle" style="background:{{item.titleColor=='red'?'rgba(255,0,0,.8)':'rgba(0,0,255,.5'}}">{{item.typeTitle}}</text>
+					<image src="{{item.pic}}" mode="widthFix"/>
+				</view>
+			</swiper-item>
+		</block>
+	</swiper>
+</view>
+
